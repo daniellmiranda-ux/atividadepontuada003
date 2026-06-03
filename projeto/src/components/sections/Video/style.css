@@ -1,0 +1,35 @@
+.video-section {
+    padding: 40px 0;
+    text-align: center;
+    /* Removeu o background-color branco para herdar o fundo escuro do site */
+}
+
+.video-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--text-h); /* Cor do título dinâmica do seu tema escuro */
+}
+
+/* Container para manter a proporção de vídeo 16:9 widescreen */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto 0;
+    padding-bottom: 56.25%; /* Proporção de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px; 
+    box-shadow: var(--shadow); /* Sombra padrão do seu site */
+    border: 1px solid var(--border); /* Bordinha discreta combinando com os outros cards */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #000; /* Fundo preto interno caso o vídeo demore a carregar */
+}

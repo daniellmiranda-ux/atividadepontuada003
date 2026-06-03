@@ -1,13 +1,15 @@
+import Header from './components/Header';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <>
-      <h1>Homenagem aos Meus Pais</h1>
-
-      <p>
-        Projeto desenvolvido em ReactJS
-      </p>
+      <Header />
+      <Home />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
